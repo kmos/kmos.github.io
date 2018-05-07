@@ -1,0 +1,25 @@
+# Site settings
+title: Mosfet's Stuff
+header-img: img/home-bg.jpg
+email: n@mosfet.io
+description: "some computer notes"
+baseurl: ""
+url: "http://www.mosfet.io"
+twitter_username: Nmos_
+github_username:  kmos
+linkedin_username: giovannipanice
+email_username:  mosfet@paranoici.org
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+comments: true
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
