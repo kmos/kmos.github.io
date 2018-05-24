@@ -1,11 +1,11 @@
 # Site settings
-title: Mosfet's Stuff
+title: mos_
 header-img: img/home-bg.jpg
 email: n@mosfet.io
 description: "some computer notes"
 baseurl: ""
 url: "http://www.mosfet.io"
-twitter_username: Nmos_
+twitter_username: nmosf
 github_username:  kmos
 linkedin_username: giovannipanice
 email_username:  mosfet@paranoici.org
