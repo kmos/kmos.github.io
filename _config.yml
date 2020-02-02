@@ -1,14 +1,14 @@
 # Site settings
 title: mos_
 header-img: img/home-bg.jpg
-email: n@mosfet.io
-description: "some computer notes"
+email: pan.g@krutt.org
+description: "some computer notes 4 lazy developers"
 baseurl: ""
 url: "http://www.mosfet.io"
 twitter_username: nmosf
 github_username:  kmos
 linkedin_username: giovannipanice
-email_username:  mosfet@paranoici.org
+email_username:  pan.g@krutt.org
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
