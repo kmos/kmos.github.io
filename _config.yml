@@ -32,6 +32,7 @@ defaults:
 
 plugins:
   - jekyll-analytics
+  - jekyll-seo-tag
 
 jekyll_analytics:
   GoogleAnalytics:              # Add, if you want to track with Google Analytics

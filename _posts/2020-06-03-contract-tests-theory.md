@@ -132,8 +132,6 @@ we can identify two categories of contracts:
 - Provider Contracts 
 - Consumer Contracts
 
-
-
 ### Contracts characteristics
 
 A _Provider_ service exposes a set of business functionalities which can be **used or not** by one or many consumers 
@@ -171,7 +169,7 @@ with a Provider-driven approach which not take in account the feedback from the 
 
 In my experience, it's easier and natural to think in a Provider-First manner than Consumer-first, and the reason behind
 this mindset, it might be connected to the fact that a breaking change made by the Provider is more detectable than the one
-made by the Consumer. In a real world example where your team isn't the owner of both service, you have to deal with meetings, 
+made by the Consumer. In a real world example where your team isn't the owner of both services, you have to deal with meetings, 
 longer meetings and extravagant, informal, hermetic, long-winded design docs and other [mythical beasts](https://en.wikipedia.org/wiki/The_Mythical_Man-Month). 
 A contract is a formal expression of needs and duties which can be another tool in your pocket that can be used in order
 to reduce the background noise during the process of evolution of services. Probably you know the sensation of powerlessness
@@ -185,11 +183,9 @@ To summarize, Consumer-Driven contracts can give you a process that presents an 
 formalised format which can help large organization with services which are owned by different teams that can be in different
 locations. 
 
-
-
-
-
 # Contract Testing with Pact
+
+[Pact.io](https://docs.pact.io/) is an implementation of Consumer-driven contract testing
 
 ![Pact ecosystem](/img/services-05.png "Pact ecosystem")
 
@@ -197,10 +193,10 @@ locations.
 
 ## References
 > - [Consumer-Driven Contracts: A Service Evolution Pattern](https://martinfowler.com/articles/consumerDrivenContracts.html#Schematron)
-- [ContractTest](https://martinfowler.com/bliki/ContractTest.html)
-- [TestDouble](https://martinfowler.com/bliki/TestDouble.html)
-- [The curious case for the Provider Driven Contract](https://pactflow.io/blog/the-curious-case-for-the-provider-driven-contract)
-- [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
-- [Patterns for Managing Source COde Branches](https://martinfowler.com/articles/branching-patterns.html)
-- [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)
-- [7 Reasons to Choose Consumer-Driven Contract Tests Over End-to-End Tests](https://reflectoring.io/7-reasons-for-consumer-driven-contracts/)
+> - [ContractTest](https://martinfowler.com/bliki/ContractTest.html)
+> - [TestDouble](https://martinfowler.com/bliki/TestDouble.html)
+> - [The curious case for the Provider Driven Contract](https://pactflow.io/blog/the-curious-case-for-the-provider-driven-contract)
+> - [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
+> - [Patterns for Managing Source COde Branches](https://martinfowler.com/articles/branching-patterns.html)
+> - [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)
+> - [7 Reasons to Choose Consumer-Driven Contract Tests Over End-to-End Tests](https://reflectoring.io/7-reasons-for-consumer-driven-contracts/)
