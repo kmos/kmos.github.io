@@ -10,24 +10,12 @@ author: Giovanni Panice
 header-img: "img/pact-bg02.jpg"
 ---
 
+## Introduction
+
 This is the first of a series of blog posts about Contract Testing which cover the minimum set of theory and practice 
 necessary for an effective adoption in your team, from design to code integration.
 
 For the sake of clarity, I have [strong opinion](https://www.youtube.com/watch?v=oxbS9Pe2PhE&feature=youtu.be).
-
-
-## Content:
-
-- [Introduction](#introduction)
-- [Context](#context)
-- [e2e testing](#e2e-testing)
-- [Mocks](#mocks)
-- [Consumer-Driven Contracts Testing](#consumer-driven-contracts)
-- [Contract Testing with Pact](#contract-testing-with-pact)
-- [What's Next](#whats-next)
-- [References](#references)
-
-## Introduction
 
 Contract Testing is a category of testing activity where the data formats and conventions defined by two systems 
 (services) which communicate a business value, is tested against a Mock called "Contract". A service _provides_ 
@@ -83,13 +71,13 @@ this is defined as a **breaking change** in which _Provider_ doesn't respect the
 
 In the same way, the Customer service can evolve the request call. For example, instead of call the API with a query 
 parameter ```id```, it can use a field in the header to query the Product Service. Also, this example is a _sort 
-of_ **breaking change** in which _Consumer_ doesn't respect the defined interaction between _Provider_. These examples 
-with the inherent differences, help to define some principles and characteristics of services that we'll cover later.
+of_ **breaking change** in which _Consumer_ doesn't respect the defined interaction between _Provider_. 
+
+Therefore, the interaction between services can be broken in many ways, and the cause can be triggered by both 
+sides which makes necessary some checks to avoid regression during the development.
 
 ## e2e Testing
 
-As previously seen, the interaction between services can be broken in many ways, and the cause can be triggered by both 
-sides which makes necessary some checks to avoid regression during the development.
 The _simplest_ thing to do, is to create an [end-to-end test](https://martinfowler.com/articles/practical-test-pyramid.html#End-to-endTests) 
 that cover the entire calls flow between _Consumer Service_ and _Provider Service_.
 
@@ -117,7 +105,7 @@ means deal with other teams which are often too much busy to insert new ~~bugs~~
 annoying stuff, it's necessary to adopt a strategy which imply a level of complexity which _usually_ developers are used 
 to see: **Mocks**.
 
-Mocks are a type of [TestDouble](https://martinfowler.com/bliki/TestDouble.html) that define a sort of specification 
+Mocks are a type of _TestDouble_ that define a sort of specification 
 based on expectations and, in this particular case, mocks can substitute APIs or clients reducing in this way, parties
 to set up and run.
 
