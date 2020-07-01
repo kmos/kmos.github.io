@@ -15,8 +15,6 @@ header-img: "img/pact-bg02.jpg"
 This is the first of a series of blog posts about Contract Testing which cover the minimum set of theory and practice 
 necessary for an effective adoption in your team, from design to code integration.
 
-For the sake of clarity, I have [strong opinion](https://www.youtube.com/watch?v=oxbS9Pe2PhE&feature=youtu.be).
-
 Contract Testing is a category of testing activity where the data formats and conventions defined by two systems 
 (services) which communicate a business value, is tested against a Mock called "Contract". A service _provides_ 
 a callable API that can be _consumed_ by another (or many) service which create an interaction between parties 
@@ -25,6 +23,7 @@ between services probably rely on a communication layer which can be slow or not
 For this reason, sometimes the best solution is to verify the interaction with a [TestDouble](https://martinfowler.com/bliki/TestDouble.html) 
 which describe the expectations between the parties.
 
+For the sake of clarity, I have [strong opinion](https://www.youtube.com/watch?v=oxbS9Pe2PhE&feature=youtu.be).
 
 ## Context
 
@@ -101,7 +100,7 @@ imply an overcomplicated CI or some [experimental branch](https://martinfowler.c
 
 ~~Developers~~ (I) usually dislike maintaining things which depend on environments or that needs hours to have a result.
 If something is faulty and slow, it's often untrusted and consequently useless. Furthermore, works with other services 
-means deal with other teams which are often too much busy to insert new ~~bugs~~ features. So then, to avoid this 
+means deal with other teams which are often too much busy doing new ~~bugs~~ features. So then, to avoid this 
 annoying stuff, it's necessary to adopt a strategy which imply a level of complexity which _usually_ developers are used 
 to see: **Mocks**.
 
@@ -128,7 +127,7 @@ not the same for the consumer. In the same way, a Provider contract cover comple
 the service with only one definition. On the contrary, a Consumer contract can cover only a set of functionalities 
 that are interesting for the service. 
 
-![consumer contracts](/img/services-04.png "consumer contracts")
+###### ![consumer contracts](/img/services-04_1.png "consumer contracts")
 
 We can say that a provider contract is a **closed** and **complete** expression of business functionalities. 
 Instead, consumer contract is an **open** and **incomplete** definition of business expectations. When a provider
@@ -173,11 +172,29 @@ locations.
 
 # Contract Testing with Pact
 
-[Pact.io](https://docs.pact.io/) is an implementation of Consumer-driven contract testing
+[Pact.io](https://docs.pact.io/) is an implementation of Consumer-driven contract testing which actually support [many 
+languages](https://docs.pact.io/implementation_guides/other_languages). At the moment of writing this post, 
+pact foundation released [v3 specification](https://github.com/pact-foundation/pact-specification) which cover the following
+features:
 
-![Pact ecosystem](/img/services-05.png "Pact ecosystem")
+- pact format for message queues
+- regular expression and type matching
+- specification shared between Ruby, JVM and .Net versions
+
+![Pact ecosystem](/img/services-05_1.png "Pact ecosystem")
+
+Furthermore, it's available a [broker](https://github.com/pact-foundation/pact_broker) which can be used to publish 
+and share contracts between services.
+
 
 ## What's Next
+
+We have covered the minimum set of principles and motivations that are necessary in my opinion to work with
+contract testing. In the next posts we will take a look to how:
+
+- create consumer-driven contracts tests with Pact and Java
+- setup broker server
+- integration with Continuous Integration
 
 ## References
 > - [Consumer-Driven Contracts: A Service Evolution Pattern](https://martinfowler.com/articles/consumerDrivenContracts.html#Schematron)
