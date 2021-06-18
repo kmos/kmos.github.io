@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Consumer-Driven Contract Testing - Part I
-status: draft
 type: post
 published: true
 comments: true
