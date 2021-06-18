@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Consumer-Driven Contract Testing with Pact and Java - Part II
-status: draft
 type: post
 published: true
 comments: true
