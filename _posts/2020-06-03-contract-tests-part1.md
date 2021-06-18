@@ -8,6 +8,7 @@ comments: true
 date: 2020-06-03 12:00:00
 author: nmosf
 header-img: "img/pact-bg02.jpg"
+description: "Contract Testing is a category of testing activity where the data formats and conventions defined by two services which communicate a business value, is tested against a Mock called Contract. In this article we will see principles and motivations for adoption of Consumer-Driven Contract Testing"
 ---
 
 ## Introduction

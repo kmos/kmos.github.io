@@ -8,6 +8,7 @@ comments: true
 date: 2020-06-17 12:00:00
 author: nmosf
 header-img: "img/pact-bg03.jpg"
+description: "The previous post explains the principles and motivations behind contract testing. Today we give a look to how write consumer-driven contract tests with pact and Java in a SpringBoot application."
 ---
 
 The [previous post]({% post_url 2020-06-03-contract-tests-part1 %}) explains the principles and motivations behind 
