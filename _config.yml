@@ -1,15 +1,18 @@
 # Site settings
-title: mos_
+title: "mos_"
+main:
+  title: "mos_ | where I develop my ideas and notes about development"
 header-img: img/home-bg2.jpg
 email: pan.g@krutt.org
-description: "some computer notes 4 lazy developers"
+description: "notes and ideas about my life as a lazy developer written probably with an IDE in dark mode"
 baseurl: ""
-url: "http://www.mosfet.io"
+url: "https://www.mosfet.io"
 twitter_username: nmosf
 github_username:  kmos
 linkedin_username: giovannipanice
 email_username:  pan.g@krutt.org
-
+destination: httpdocs
+author: kmos
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
 # google_tracking_id:
@@ -38,3 +41,14 @@ jekyll_analytics:
   GoogleAnalytics:              # Add, if you want to track with Google Analytics
     id: UA-168994403-1         # Required - replace with your tracking id
     anonymizeIp: false        # Optional - Default: false - set to true for anonymized tracking
+
+twitter:
+  username: nmosf
+  card: summary
+
+social:
+  name: Giovanni Panice
+  links:
+    - https://twitter.com/nmosf
+    - https://www.linkedin.com/in/giovannipanice/
+    - https://github.com/kmos

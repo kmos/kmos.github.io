@@ -6,7 +6,7 @@ type: post
 published: true
 comments: true
 date: 2020-06-17 12:00:00
-author: Giovanni Panice
+author: nmosf
 header-img: "img/pact-bg03.jpg"
 ---
 
